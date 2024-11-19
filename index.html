@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño sin Límites
+    </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap'" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Imagenes/imagen4.png" alt="Logo" width="90" height="90">
+                Diseño sin Límites
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://limobelinwo.com/la-silla-panton-de-verner-panton/" target="_blank">La silla Panton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.anothermag.com/design-living/11113/how-verner-panton-changed-the-way-the-world-sees-furniture-design" target="_blank">Innvoación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.pepitadeoliva.com/designer/verner-panton/" target="_blank">Verner Panton</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <img src="Imagenes/imagen1.jpg" alt="Collage" class="img-fluid border-red">
+    </header>
+
+    <main class="container">
+        <section class="introduccion">
+            <h1 class="text-center">Experiencia Visual</h1>
+            <p class="text-center"><strong>Verner Panton </strong>redefinió las fronteras del diseño al combinar formas fluidas, colores vibrantes y materiales innovadores como el plástico moldeado. Su enfoque rompió con las reglas tradicionales, transformando muebles en piezas escultóricas y creando ambientes que parecían salidos de un sueño futurista. La icónica <strong>Panton Chair </strong> es un ejemplo perfecto de su visión: un objeto que no solo es funcional, sino que también invita a experimentar el espacio de una manera completamente nueva. Panton demostró que el diseño no tiene límites, y su legado sigue inspirando a generaciones de creativos.</p>
+        </section>
+
+        <section class="row my-4 text-center">
+            <div class="col-md-4">
+                <h2>El color como lenguaje</h2>
+                <p>Explora cómo Verner Panton utilizó colores intensos y contrastes para transformar el estado de ánimo de los espacios y darles identidad.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Nueva era</h2>
+                <p>Analiza cómo la experimentación con plásticos y materiales sintéticos permitió a Panton crear muebles de formas imposibles.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Más allá del objeto</h2>
+                <p>Descubre cómo Panton diseñó interiores completos que rompieron las barreras entre arte, diseño y funcionalidad, creando experiencias sensoriales únicas.
+                </p>
+            </div>
+        </section>
+
+        <section class="row justify-content-center my-4">
+            <div class="col-md-5">
+                <img src="Imagenes/imagen 2.jpg" alt="lampara" class="img-fluid rounded hover-effect">
+            </div>
+            <div class="col-md-5">
+                <img src="Imagenes/imagen 3.jpg" alt="silla" class="img-fluid rounded hover-effect">
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2>Imaginación</h2>
+            <p>Verner Panton rompió todas las reglas, y eso lo hace inolvidable. Sus formas, colores y materiales nos enseñan que el diseño es mucho más que objetos: es creatividad en estado puro. Su legado sigue siendo una inspiración para pensar fuera de lo común y atrevernos a crear.</p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</button>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Ingrese su nombre, por favor. </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Ingrese un correo válido, por favor.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                            <div class="invalid-feedback">Ingrese su mensaje, por favor.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block text-danger">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <p>© 2024 Diseño sin Límites</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

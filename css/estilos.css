@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FF7300;
+    color: #CC0088;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', serif;
+    color: #CC0088;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Menú */
+.navbar {
+    background-color: #F9F9F9;
+}
+
+.navbar-brand {
+    font-family: 'Bebas Neue', serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #CC0088 !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Transición suave */
+}
+
+.nav-link:hover {
+    color: #FF7300 !important; /* Color al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* Header */
+header img {
+    width: 100%;
+    height: auto;
+    border: 20px solid #DA3A29;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+}
+
+.introduccion {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.row {
+    margin: 30px 0;
+    padding: 15px 0;
+}
+
+.col-md-4 {
+    background-color: #F9F9F9;
+    padding: 15px;
+    border: 2px solid #CC0088;
+    border-radius: 0; /* Bordes rectos */
+}
+
+
+
+
+/* Imágenes */
+.imagenes img {
+    margin-bottom: 20px;
+    border: 3px solid #CC0088;
+    border-radius: 0; /* Bordes rectos */
+}
+
+/* Botón de contacto */
+button[data-bs-target="#contactModal"] {
+    background-color: #CC0088;
+    color: #F9F9F9;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 0; /* Bordes rectos */
+}
+
+button[data-bs-target="#contactModal"]:hover {
+    background-color: #FF7300;
+    color: #CC0088;
+}
+
+/* Modal */
+.modal-content {
+    background-color: #F9F9F9;
+    border: 3px solid #CC0088;
+}
+
+.modal-header {
+    background-color: #FF7300;
+    border-bottom: 2px solid #CC0088;
+}
+
+.modal-title {
+    font-family: 'Bebas Neue', serif;
+    color: #F9F9F9;
+}
+
+.btn-close {
+    background-color: transparent;
+    border: none;
+    color: #CC0088;
+}
+
+/* Botón "Enviar" dentro del modal */
+button[type="submit"] {
+    background-color: #F9F9F9;
+    color: #CC0088;
+    border: 2px solid #CC0088;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 0; /* Bordes rectos */
+}
+
+button[type="submit"]:hover {
+    background-color: #CC0088;
+    color: #F9F9F9;
+}
+
+/* Footer */
+footer {
+    background-color: #CC0088;
+    color: #F9F9F9;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #FF7300;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes img {
+        width: 80%;
+    }
+}
+
+/* Estilo de imágenes con hover */
+.hover-effect:hover {
+    filter: brightness(2) grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
